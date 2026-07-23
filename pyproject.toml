@@ -1,0 +1,12 @@
+[project]
+name = "blockchain-archaeologist"
+version = "0.1.0"
+description = "Offline-capable GUI for cataloging embedded data in Bitcoin-Core-like blockchains"
+requires-python = ">=3.10"
+dependencies = ["PySide6>=6.7,<7"]
+
+[project.scripts]
+blockchain-archaeologist = "chain_archaeologist.main_window:run"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
